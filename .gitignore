@@ -1,0 +1,9 @@
+target*
+*.iml
+*.log
+.idea
+.classpath
+.settings
+.project
+out
+web-app/WEB-INF/*
