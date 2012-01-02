@@ -7,7 +7,9 @@ class SwissPostCodeGrailsPlugin {
     def dependsOn = [:]
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
-            "grails-app/views/error.gsp"
+            "grails-app/views/**",
+            "web-app/**",
+            "**/.gitignore"
     ]
 
     // TODO Fill in these fields

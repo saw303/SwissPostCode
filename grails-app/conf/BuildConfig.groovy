@@ -33,5 +33,6 @@ grails.project.dependency.resolution = {
               ":release:1.0.0") {
             export = false
         }
+		//compile ':springcache:1.3.1'
     }
 }
