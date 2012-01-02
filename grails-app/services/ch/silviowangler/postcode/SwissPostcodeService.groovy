@@ -46,16 +46,19 @@ class SwissPostcodeService implements InitializingBean {
 
         postcode = postcode.trim()
 
-        if(postcodeMap[postcode]) {
+        if(isExactHit(postcode)) {
             log.debug("Found postcode '${postcode}' on index")
             return [ postcodeMap[postcode][0]].asImmutable()
         }
         else {
             log.debug("Trying to find postcode ${postcode} on list")
-
             def candidates = postcodeList.findAll { it.postcode.startsWith(postcode)}
+            log.debug("Found ${candidates.size()} for postcode '${postcode}'")
             return candidates.asImmutable()
         }
-        return []
+    }
+
+    private boolean isExactHit(String postcode) {
+        return postcodeMap.containsKey(postcode)
     }
 }

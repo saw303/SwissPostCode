@@ -22,3 +22,10 @@ log4j = {
 
     warn   'org.mortbay.log'
 }
+
+grails.doc.title = 'Grails Swiss Postcode Plug In'
+grails.doc.subtitle = 'Plug In Documentation'
+grails.doc.authors = 'Silvio Wangler'
+grails.doc.license = 'Apache License, Version 2.0'
+grails.doc.copyright = 'Copyright 2011-2012 Silvio Wangler'
+grails.doc.footer = ''

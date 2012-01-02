@@ -1,0 +1,26 @@
+This is a brief introduction into the Swiss Postcode Plug In for Grails 2.x.
+
+This plug in provides a look-up service for postcode of Switzerland. The data is provided by the [Swiss Post|http://www.post.ch/post-startseite/post-adress-services-match/post-direct-marketing-datengrundlage/post-direct-marketing-match-zip.htm].
+
+h2. Installation
+
+In order to install this plug in run the following command
+
+{code}
+grails install-plugin swiss-post-code
+{code}
+
+h2. Example
+{code}
+class YourController {
+    def SwissPostcodeService swissPostcodeService
+
+    def index = {
+
+        //return postcode of Wallisellen (8304)
+        List<SwissPostcode> postcodes = swissPostcodeService.findPostcodes('8304')
+
+        render {postcodes[0].city.encodeAsHTML()}
+    }
+}
+{code}
