@@ -29,3 +29,5 @@ grails.doc.authors = 'Silvio Wangler'
 grails.doc.license = 'Apache License, Version 2.0'
 grails.doc.copyright = 'Copyright 2011-2012 Silvio Wangler'
 grails.doc.footer = ''
+grails.views.default.codec="none" // none, html, base64
+grails.views.gsp.encoding="UTF-8"
