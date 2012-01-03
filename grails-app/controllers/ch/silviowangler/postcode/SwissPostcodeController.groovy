@@ -1,7 +1,5 @@
 package ch.silviowangler.postcode
 
-import grails.converters.JSON
-
 class SwissPostcodeController {
 
     static allowedMethods = [findPostcode: 'GET']
