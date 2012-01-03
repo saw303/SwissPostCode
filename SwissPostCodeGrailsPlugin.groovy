@@ -1,6 +1,6 @@
 class SwissPostCodeGrailsPlugin {
     // the plugin version
-    def version = '0.1'
+    def version = '0.1.1'
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.0 > *"
     // the other plugins this plugin depends on
@@ -12,7 +12,6 @@ class SwissPostCodeGrailsPlugin {
             "**/.gitignore"
     ]
 
-    // TODO Fill in these fields
     def title = "Swiss Post Code Plugin" // Headline display name of the plugin
     def author = "Silvio Wangler"
     def authorEmail = "silvio.wangler@gmail.com"
