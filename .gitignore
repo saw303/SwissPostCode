@@ -1,5 +1,6 @@
 target*
 *.iml
+*.zip
 *.log
 .idea
 .classpath
