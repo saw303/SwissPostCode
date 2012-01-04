@@ -7,7 +7,11 @@ class SwissPostcodeController {
     def swissPostcodeService
 
     def findPostcodeJSON() {
+
+        log.trace("Trying to find postcodes for ${params.id}")
         def results = params.id ? swissPostcodeService.findPostcodes(params.id) : []
+
+        log.debug("Found ${results.size()} postcodes for ${params.id}")
 
         render(contentType: 'text/json') {
             postcodes = array {
